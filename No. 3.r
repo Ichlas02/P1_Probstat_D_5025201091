@@ -22,7 +22,7 @@ plot(h, col=cuts)
 set.seed(0)
 mean(rpois(364, rata) == 6) 
 
-#untuk menghitung jumlah lahirnya 6 bayi per ari dalam setahun
+#untuk menghitung jumlah lahirnya 6 bayi per hari dalam setahun
 set.seed(0)
 length(which(rpois(365, rata) == 6))
 
