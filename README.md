@@ -73,7 +73,7 @@ Menggunakan fungsi distribusi poisson yaitu `dpois(x, rata)` dimana x = peluang 
 
 ### 3b : Simulasi kelahiran 6 bayi selama setahun
 
-Menggunakan fungsi `set.seed(0)` untuk menggunakan seed agar angka randomnya tidak selalu acak dan menggunakan fungsi randomize poisson yaitu `rpois(365, rata)` untuk mengenerate 365 angka random binomial. 
+Menggunakan fungsi `set.seed(0)` untuk menggunakan seed agar angka randomnya tidak selalu acak dan menggunakan fungsi randomize poisson yaitu `rpois(365, rata)` untuk mengenerate 365 angka random poisson. 
 
 ![image](https://user-images.githubusercontent.com/88977654/162622140-08a1667a-e42f-4875-b46c-18dd08fbcaa2.png)
 
@@ -90,4 +90,90 @@ Berdasarkan hasil perhitungan pada poin a dan b. Dapat disimpulkan bahwa dalam s
 Berikut rumus untuk membuat rata-rata dan varian dari Distribusi Poisson:
 
 ![image](https://user-images.githubusercontent.com/88977654/162622423-ed061a07-3899-41e6-8767-dbadea68ce2e.png)
+
+## Nomor 4
+
+### 4a : Fungsi Probabilitas dari Distribusi Chi-Square
+
+Menggunakan fungsi distribusi Chi-Square yaitu `dchisq(x, v)` dimana x = peluang ke-, v = rata-rata
+
+![image](https://user-images.githubusercontent.com/88977654/162622989-9a51a080-7dfa-4941-8c8e-8f0239ac234b.png)
+
+### 4b : Histogram distribusi Chi-square dengan 100 data random
+
+Menggunakan fungsi `set.seed(1)` untuk menggunakan seed agar angka randomnya tidak selalu acak dan menggunakan fungsi randomize Chi-square yaitu `rchisq(100, rata)` untuk mengenerate 100 angka random Chi-square.
+
+![image](https://user-images.githubusercontent.com/88977654/162623030-24625388-c067-4865-98b2-3ceb7630f197.png)
+
+Berikut hasil outputnya:
+
+![image](https://user-images.githubusercontent.com/88977654/162623091-b053e108-19aa-425d-8f12-452fd7354057.png)
+
+### 4c : Menghitung rata-rata dan varian
+
+Berikut rumus untuk membuat rata-rata dan varian dari Distribusi Chi-square:
+
+![image](https://user-images.githubusercontent.com/88977654/162623147-e584753f-9b96-45e2-bce7-1ba33affccb0.png)
+
+## Nomor 5
+
+### 5a : Fungsi Probabilitas dari Distribusi Eksponensial dengan λ = 3
+
+Menggunakan fungsi Distribusi Eksponensial yaitu `dexp(lamb)` dimana lamb = rata-rata.
+
+![image](https://user-images.githubusercontent.com/88977654/162623312-4be801b6-bca6-4847-8234-b4a853ed7606.png)
+
+### 5b : Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
+
+![image](https://user-images.githubusercontent.com/88977654/162623382-2971ca88-afa7-4726-8879-0664646212c0.png)
+
+Berikut output dari hasil random 10 angka:
+
+![image](https://user-images.githubusercontent.com/88977654/162623407-ba31ecbd-5ad3-4a06-bfdb-8e3751217a44.png)
+
+Berikut output dari hasil random 100 angka:
+
+![image](https://user-images.githubusercontent.com/88977654/162623425-369f60a7-4777-413b-99bd-eb0f032e62f6.png)
+
+Berikut output dari hasil random 1000 angka:
+
+![image](https://user-images.githubusercontent.com/88977654/162623445-ac1210bc-6a6a-4d65-827a-0bf0500ff5fd.png)
+
+Berikut output dari hasil random 10000 angka:
+
+![image](https://user-images.githubusercontent.com/88977654/162623452-4fce8a02-fd7f-448b-bff5-1b2d101ff951.png)
+
+### 5c : Menghitung rata-rata dan varian
+
+Berikut rumus untuk membuat rata-rata dan varian dari Distribusi Eksponensial:
+
+![image](https://user-images.githubusercontent.com/88977654/162623475-ae7a14cf-252c-41be-a0a4-9c2a5147f13a.png)
+
+## Nomor 6
+
+### 6a : Menghitung distribusi normal n = 100, sd = 8, rata = 50, dan menampilkan plot
+
+Menggunakan fungsi Distribusi Normal yaitu `rnorm(n, rata, sd)` dimana n = jumlah testcase, sd = standar deviasi, dan rata = rata-rata. Lalu dimasukkan ke dalam fungsi `plot()` untuk menampilkan hasilnya dalam bentuk grafik
+
+![image](https://user-images.githubusercontent.com/88977654/162623611-c7516e97-67e7-4095-8c21-244acb595083.png)
+
+Berikut hasil outputnya:
+
+![image](https://user-images.githubusercontent.com/88977654/162623632-1059eb59-062b-4387-b288-eba96980d6f5.png)
+
+### 6b : Generate Histogram dari Distribusi Normal dengan breaks 50 + format penamaan
+
+Untuk generate histogram, digunakan syntax `hist(x)`. Lalu untuk rename file dan menambahkan breaks, masukkan `hist(x, main="nama histograph", breaks=50)`. Berikut syntax lengkapnya: 
+
+![image](https://user-images.githubusercontent.com/88977654/162623665-ef8f2a34-4ca7-4bb7-bc6e-bf6eb99d638d.png)
+
+Berikut hasil outputnya:
+
+![image](https://user-images.githubusercontent.com/88977654/162623801-8a4d506a-0981-4fc0-8313-a0b78abb24ca.png)
+
+### 6c : Menghitung varian
+
+Berikut rumus untuk membuat varian dari Distribusi Normal:
+
+![image](https://user-images.githubusercontent.com/88977654/162623832-a63c8dbc-03e6-4ae7-b7f7-131fcd537194.png)
 
